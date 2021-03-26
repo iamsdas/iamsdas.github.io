@@ -10,14 +10,13 @@ body {
 	font-size: 50px;
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	flex-direction: column;
 	font-family: 'Overpass', sans-serif;
 }
 
 div {
-	padding: 0px 50px;
-	padding-bottom: 30px;
+	padding: 10px;
 }
 
 b {
