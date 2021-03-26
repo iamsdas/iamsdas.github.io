@@ -5,8 +5,23 @@ html, body {
 	margin: 0%;
 }
 
+:root {
+	--bg-color: #f4f4f4;
+	--txt-color: #000;
+	--highlight-color: #32ad91;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	:root {
+		--bg-color:#17202b;
+		--txt-color: #ccc;
+		--highlight-color: #4afff6;
+	}
+}
+
 body {
-	background-color: #f4f4f4;
+	background-color: var(--bg-color);
+	color: var(--txt-color);
 	font-size: 50px;
 	display: flex;
 	justify-content: center;
@@ -20,11 +35,11 @@ div {
 }
 
 b {
-	color: #006f57;
+	color: var(--highlight-color);
 }
 
 a {
-	color: #006f57;
+	color: var(--highlight-color);
 	padding-right: 15px;
 	font-size: 35px;
 	text-decoration: none;
