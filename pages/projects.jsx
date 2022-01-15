@@ -60,6 +60,14 @@ const rgbDataURL = (r, g, b) => {
 export const getStaticProps = async () => {
   const projects = [
     {
+      name: 'Martial Arts Simulator',
+      description: `This is a simple martial arts simulator built using HTML Canvas`,
+      stack: 'HTML, CSS, Javascript',
+      url: 'https://fightsim.pages.dev/',
+      image: 'martial',
+      rgb: [255, 255, 255],
+    },
+    {
       name: 'Todo Lists',
       description: `This is a simple todo lists web app made using Next.js. The backend
       serves GraphQL via Next.js API routes (serverless functions) using Apollo server.
